@@ -7,8 +7,12 @@ Wichtig:
 
 /*
  Beispiele 1 - Arrays mit verschiedenen Datentypen
+
+ Weitere Beispiele finden Sie hier:
+ https://www.w3schools.com/jsref/jsref_obj_array.asp
  */
 
+/*
 let stringArray = [ 'John', 'Bob', 'Mary'];
 //alle Elemente
 console.log(stringArray);
@@ -38,6 +42,7 @@ console.log(tictactoe[1][2]);
 //Alternative Schreibweise
 let arr = new Array('red','orange','green');
 console.log(arr);
+*/
 
 
 /*
@@ -50,27 +55,29 @@ let todoList = ['Waschen', 'Einkaufen'];
 //Liste füllen
 todoList[2] = "Rechnung 1 zahlen";
 todoList[3] = "Rechnung 2 zahlen";
-todoList[4] = "Mahnung 1 zahlen";
 todoList.push('Herbst-Ferien: Hotel buchen');
 todoList.push('Herbst-Ferien: Flug buchen');
+todoList.push('M288-LB02 planen');
+todoList.push('M288-LB02 Projekt 1 programmieren');
 
-//Liste abbauen
+//Todos erledigen resp. die Liste abbauen
+
 //letztes Element löschen
 todoList.pop();
+console.log('letztes Element gelöscht mit pop:');
+console.log(todoList);
 
+//erstes Element löschen
 todoList.shift();
+console.log(todoList);
 
-todoList.unshift('purple');
+//Element an erster stelle setzen
+todoList.unshift('Mahnung 1 zahlen');
+console.log(todoList);
 
-console.log(todoList.indexOf('brown'));
-
-if(todoList.indexOf('blue') === -1) {
-
-    colors.push('blue');
-
-    console.log(colors);
-
-}
+//Index des Eintrags ermitteln
+const todoXY = 'Rechnung 2 zahlen';
+console.log(`Index von "${todoXY}" ist ${todoList.indexOf(todoXY)}`);
 
 
 

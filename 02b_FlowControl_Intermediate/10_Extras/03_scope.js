@@ -19,7 +19,7 @@ if (true) {
         let v4 = 'varFour';
         console.log(v4);
     }
-    console.log(v4);
+    console.log(v4); //ReferenceError: v.. is not defined
 
     //global variables
     var v5 = 'varFive';
