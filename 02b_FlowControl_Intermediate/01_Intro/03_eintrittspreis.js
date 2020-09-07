@@ -20,7 +20,7 @@ if ((age === undefined) || (price === undefined)){
     message = `You need to define the price and the age! Try again.`;
 } else {
     let discount;
-    // If 6 or under print message free entrance
+    // If 6 under print message free entrance
     if (age < 6) {
         message = `With ${age}: Free entrance!`;
     }
