@@ -1,37 +1,52 @@
-// Lecture: Loops - Part 1
+/*
+Thema: Loops (Schleifen) mit Arrays
+Wichtig:
+- Erstes Element beginnt immer bei Index = 0
+- Letzes Element ist bei Index = Array-Länge minus 1
+ */
 
 /*
-var arr = ['John', 'Nick', 'Bob', 'Michael', 'Mary'];
+ Beispiele 1 - Arrays mit Index oder mit for-Loop ausgeben
+ */
 
-// console.log(arr[0]);
-// console.log(arr[1]);
-// console.log(arr[2]);
-// console.log(arr[3]);
-// console.log(arr[4]);
+//Array definieren
+let klassen = ['ME17', 'ME18', 'ME19', 'ME20'];
 
-// for(var i = 0; i < 5; i++) {
+//Arrays mit Index ausgeben
+console.log(klassen[0]);
+console.log(klassen[1]);
+console.log(klassen[2]);
+console.log(klassen[3]);
 
-//     console.log(arr[i]);
-
-// }
-
-for(var i = 0; i < arr.length; i++) {
-
-    // console.log(arr[i]);
-    if(arr[i] === 'Bob') {
-
-        console.log(arr[i] + ' is my brother');
-        // break;
-        continue;
-
-    }
-
-    console.log(arr[i]);
-
+//Gleiches Arrays mit for-Loop ausgeben
+for(let i = 0; i < 4; i++) {
+    console.log(klassen[i]);
 }
 
-// console.log(arr);
-*/
+//Ausgabe über die Console - Warum ein Loop-Code?
+console.log(klassen);
+
+
+//Innerhalb des for-loops kann Code geändert werden
+for(let i = 0; i < 4; i++) {
+    console.log(`Mediamatiker-Klasse ${klassen[i]}`);
+    //console.log(`${i}. Mediamatiker-Klasse ${klassen[i]}`);
+}
+
+console.log("\nMit Parallel-Klassen (Ausgabe mit for)");
+let klasse;
+let bezeichnung;
+
+for(let i = 0; i < 4; i++) {
+    //UTF-16 Hexadezimal 'a' codiert
+    //https://asecuritysite.com/coding/asc2
+    klasse = klassen[i]
+    bezeichnung = 0x61;
+    for(let i = 0; i < 4; i++) {
+        console.log(`Mediamatiker-Klasse ${klasse}${String.fromCharCode(bezeichnung++)}`);
+    }
+}
+
 
 
 

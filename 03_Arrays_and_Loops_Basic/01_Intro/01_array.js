@@ -12,7 +12,6 @@ Wichtig:
  https://www.w3schools.com/jsref/jsref_obj_array.asp
  */
 
-/*
 let stringArray = [ 'John', 'Bob', 'Mary'];
 //alle Elemente
 console.log(stringArray);
@@ -23,13 +22,16 @@ console.log(`array length is ${stringArray.length}`);
 let lastElement = stringArray.length-1;
 console.log(`last element is ${stringArray[lastElement]}`);
 
+//Zahlen-Array
 let numberArray = [ 0,1,2,3,4 ];
 console.log(numberArray);
 //Challenge: geben Sie das erste und das letzte Array-Element aus
 
+//Boolean-Array
 let boolArray = [ true,false ];
 console.log(boolArray);
 
+//Matrix resp. mehrdimensionales Array
 let tictactoe = [
     ['o','x','x'],
     ['o','o','x'],
@@ -42,7 +44,7 @@ console.log(tictactoe[1][2]);
 //Alternative Schreibweise
 let arr = new Array('red','orange','green');
 console.log(arr);
-*/
+
 
 
 /*
