@@ -1,4 +1,11 @@
 /*
+Project Idea -
+1. Build a web client with an input mask.
+2. User input is computed to a grade shown on the client by a letter.
+3. Bad/wrong input should return an error message.
+ */
+
+/*
 Beispiel 1 - Funktion MIT mehr als einem Parameter und Fallunterscheidungen
  */
 // students score, total possible score
@@ -27,9 +34,4 @@ let result = gradeCalc(9, 21);
 console.log(result);
 
 
-/*
-Project Idea -
-1. Build a web client with an input mask.
-2. User input is computed to a grade shown on the client by a letter.
-3. Bad/wrong input should return an error message.
- */
+

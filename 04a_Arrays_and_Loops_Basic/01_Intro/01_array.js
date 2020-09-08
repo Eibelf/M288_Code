@@ -12,13 +12,15 @@ Wichtig:
  https://www.w3schools.com/jsref/jsref_obj_array.asp
  */
 
+//Array mit Strings
 let stringArray = [ 'John', 'Bob', 'Mary'];
 //alle Elemente
 console.log(stringArray);
 //erstes Element
 console.log(stringArray[0]);
-//letztes Element
+//Array-Länge
 console.log(`array length is ${stringArray.length}`);
+//letztes Element
 let lastElement = stringArray.length-1;
 console.log(`last element is ${stringArray[lastElement]}`);
 
