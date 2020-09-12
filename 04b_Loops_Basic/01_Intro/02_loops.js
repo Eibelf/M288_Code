@@ -27,23 +27,27 @@ for(let i = 0; i < 4; i++) {
 console.log(klassen);
 
 
-//Innerhalb des for-loops kann Code geändert werden
+//Beispiel: Ausgabe der Array-Elemente mit HTML vermischen
+let htmlOutput = '<ul>\n';
 for(let i = 0; i < 4; i++) {
-    console.log(`Mediamatiker-Klasse ${klassen[i]}`);
-    //console.log(`${i}. Mediamatiker-Klasse ${klassen[i]}`);
+    htmlOutput += `\t<li>${i}. Mediamatiker-Klasse ${klassen[i]}</li>\n`;
 }
+htmlOutput += '</ul>';
+console.log(htmlOutput);
 
-console.log("\nMit Parallel-Klassen (Ausgabe mit for)");
-let klasse;
+
+//Beispiel: Ausgabe generieren anhand von UTF-Codierung
+console.log("\nAusgabe mit Parallel-Klassen (Ausgabe mit for)");
+
 let bezeichnung;
-
+let klasse;
 for(let i = 0; i < 4; i++) {
     //UTF-16 Hexadezimal 'a' codiert
     //https://asecuritysite.com/coding/asc2
-    klasse = klassen[i]
     bezeichnung = 0x61;
+    klasse = klassen[i];
     for(let i = 0; i < 4; i++) {
-        console.log(`Mediamatiker-Klasse ${klasse}${String.fromCharCode(bezeichnung++)}`);
+        console.log(`Klasse: ${klasse}${String.fromCharCode(bezeichnung++)}`);
     }
 }
 

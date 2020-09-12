@@ -6,7 +6,7 @@ Schreibweise für Funktionen in JavaScript (und auch in anderen Programmiersprac
 Beispiel 1 - Arrow-Funktion ohne Parameter
  */
 
-//Arrow-Funktionsname als Mehrzeihler (empfohlen)
+//Arrow-Funktion als Mehrzeihler (empfohlen)
 let greetUser = () => {
     console.log('Welcome user!')
 }
@@ -14,7 +14,7 @@ let greetUser = () => {
 //Aufruf der Arrow-Funktion mit gleichzeitger Ausgabe auf der Console
 greetUser();
 
-//Arrow-Funktionsname als Einzeihler (in Ausnahmefällen)
+//Arrow-Funktion als Einzeihler (in Ausnahmefällen)
 let greetUserLong = () => console.log('Welcome user too!');
 
 //Aufruf der Arrow-Funktion mit gleichzeitger Ausgabe auf der Console

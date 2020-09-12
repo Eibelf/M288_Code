@@ -54,9 +54,12 @@ console.log(arr);
  Methoden (ähnlich wie Funktionen) verarbeiten die Array-Daten
  */
 
-let todoList = ['Waschen', 'Einkaufen'];
+//leeren Array initialisieren
+let todoList = [];
 
 //Liste füllen
+todoList[0] = "Waschen";
+todoList[1] = "Einkaufen";
 todoList[2] = "Rechnung 1 zahlen";
 todoList[3] = "Rechnung 2 zahlen";
 todoList.push('Herbst-Ferien: Hotel buchen');

@@ -42,9 +42,8 @@ console.log(`3 hoch 2 gibt: ${result1}`);
 
 //Aufruf der Funktion
 let param1 = 10;
-let result2 = square(param1);
 //Ausgabe des Resultats
-console.log(`${param1} hoch 2 gibt: ${result2}`);
+console.log(`${param1} hoch 2 gibt: ${square(param1)}`);
 
 
 /*
