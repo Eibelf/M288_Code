@@ -38,31 +38,25 @@
     /*
     Project Idea -
     1. Put the JavaScript program in an external file
-    2. Add a complete new currency into the "I have" part.
-    3. Extend the existing code in order to compute correctly the currency "I want"
+    2. Add a local currency into the "I have" part (i.e. CHF).
+    2. Add two currencies into the "I want" part (i.e. EUR, USD).
+    3. Compute the exchange between the local and foreign the currency
     and vice-versa.
      */
 
-    const EUR = "eur";
-    const CHF = "chf";
-    const USD = "usd";
+    //Variablen und Konstanten
+    //??
 
     // aus https://www1.oanda.com/currency/converter/
+    //Vorschlage Umrechnungswerte evtl. hier hinzufügen
     let CHF_EUR = 0.92901;
-    let CHF_USD = 1.07378;
+    //??
 
-    let EUR_CHF = 1.07619;
-    let USD_CHF = 0.93109;
-
-    //Werte auslesen
-    let locAm=document.getElementById("localAmount");
-    let locEx=document.getElementById("localExchange");
-    let forAm=document.getElementById("foreignAmount");
-    let forEx=document.getElementById("foreignExchange");
+    //Werte z.B. document.getElementById auslesen
 
     /* Multipliziert den Betrag mit dem Umwandlungskurs resp. Währungskurs */
     function convert(betrag, kurs) {
-        return Math.fround(betrag * kurs).toFixed(4);
+        //??
     }
 
     /**
@@ -70,35 +64,34 @@
      */
     function localToForeign() {
         /* Ist Ausgangswährung CHF dann ... */
-        if (locEx.value === CHF) {
+        //??
             /* ... und die Zielwährung EUR dann ... */
-            if (forEx.value === EUR) {
-                /* ... rufe die Funktion auf zur Berechnung des EUR-Kurses  */
-                forAm.value = convert(locAm.value, CHF_EUR);
-            }
-            if (forEx.value === USD) {
-                /* ... rufe die Funktion auf zur Berechnung des USD-Kurses  */
-                forAm.value = convert(locAm.value, CHF_USD);
-            }
-        }
+            //??
+                /* ... rufe die Funktion auf zur Berechnung des CHF->EUR-Kurses  */
+                //??
+
+            /* ... und die Zielwährung USD dann ... */
+            //??
+                /* ... rufe die Funktion auf zur Berechnung des CHF->USD-Kurses  */
+                //??
     }
 
     /**
      *  von Fremdwährung nach CHF
      */
+
     function foreignToLocal() {
-        /* Ist Ausgangswährung CHF dann ... */
-        if (locEx.value === CHF) {
-            /* ... und die Zielwährung EUR dann ... */
-            if (forEx.value === EUR) {
-                /* ... rufe die Funktion auf zur Berechnung des EUR-Kurses  */
-                locAm.value = convert(forAm.value, EUR_CHF);
-            }
-            if (forEx.value === USD) {
-                /* ... rufe die Funktion auf zur Berechnung des USD-Kurses  */
-                locAm.value = convert(forAm.value, USD_CHF);
-            }
-        }
+        /* Ist Zielwährung CHF dann ... */
+        //??
+            /* ... und die Ausgangswährung EUR dann ... */
+            //??
+                /* ... rufe die Funktion auf zur Berechnung des EUR->CHF-Kurses  */
+                //??
+
+            /* ... und die Zielwährung USD dann ... */
+            //??
+                /* ... rufe die Funktion auf zur Berechnung des USD->CHF-Kurses  */
+                //??
     }
 
 
