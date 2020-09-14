@@ -31,7 +31,7 @@ console.log(numberArray);
 
 //Boolean-Array
 let boolArray = [ true,false ];
-console.log(boolArray);
+
 
 //Matrix resp. mehrdimensionales Array
 let tictactoe = [
@@ -42,8 +42,12 @@ let tictactoe = [
 console.log(tictactoe);
 console.log(tictactoe[0][0]);
 console.log(tictactoe[1][2]);
+/* Challenge:
+Was wird bei tictactoe[2][1] und was bei tictactoe[1][1]
+ausgegeben?
+*/
 
-//Alternative Schreibweise
+//Alternative jedoch seltene Schreibweise
 let arr = new Array('red','orange','green');
 console.log(arr);
 
@@ -66,6 +70,8 @@ todoList.push('Herbst-Ferien: Hotel buchen');
 todoList.push('Herbst-Ferien: Flug buchen');
 todoList.push('M288-LB02 planen');
 todoList.push('M288-LB02 Projekt 1 programmieren');
+//Ausgabe
+console.log(todoList);
 
 //Todos erledigen resp. die Liste abbauen
 
@@ -78,11 +84,11 @@ console.log(todoList);
 todoList.shift();
 console.log(todoList);
 
-//Element an erster stelle setzen
+//Element an erster Stelle einfügen
 todoList.unshift('Mahnung 1 zahlen');
 console.log(todoList);
 
-//Index des Eintrags ermitteln
+//Index eines Eintrags ermitteln
 const todoXY = 'Rechnung 2 zahlen';
 console.log(`Index von "${todoXY}" ist ${todoList.indexOf(todoXY)}`);
 
