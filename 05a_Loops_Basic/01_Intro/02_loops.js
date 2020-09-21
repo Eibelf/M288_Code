@@ -19,21 +19,23 @@ console.log(klassen[2]);
 console.log(klassen[3]);
 
 //Gleiches Arrays mit for-Loop ausgeben
-for(let i = 0; i < 4; i++) {
+for(let i=0; i< klassen.length;i++){
     console.log(klassen[i]);
 }
 
-//Ausgabe über die Console - Warum ein Loop-Code?
+//Challenge - Was ist der Vorteil eines Loop-Code?
 console.log(klassen);
 
 
-//Beispiel: Ausgabe der Array-Elemente mit HTML vermischen
+//Beispiel: HTML-Code generieren
 let htmlOutput = '<ul>\n';
-for(let i = 0; i < 4; i++) {
+for (let i=0; i<klassen.length; i++){
+    //htmlOutput = htmlOutput + `\t<li>${i}. Mediamatiker-Klasse ${klassen[i]}</li>\n`;
     htmlOutput += `\t<li>${i}. Mediamatiker-Klasse ${klassen[i]}</li>\n`;
 }
 htmlOutput += '</ul>';
 console.log(htmlOutput);
+
 
 
 //Beispiel: Ausgabe generieren anhand von UTF-Codierung

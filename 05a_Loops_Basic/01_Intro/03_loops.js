@@ -1,16 +1,22 @@
 /*
- Beispiele 2 - Arrays mit Index oder mit while-Loop ausgeben
+Thema: Loops (Schleifen) mit Arrays
+Wichtig:
+- Erstes Element beginnt immer bei Index = 0
+- Letzes Element ist bei Index = Array-Länge minus 1
+ */
+/*
+ Beispiele - Arrays mit while-Loop ausgeben
 */
 
 //Array definieren
 let klassen = ['ME17', 'ME18', 'ME19', 'ME20'];
 
 
-//Innerhalb des while-loops kann Code geändert werden
+//Array mit while-Loop ausgeben
 let i = 0;
-while (i < 4){
-    i++;
+while (i < klassen.length){
     console.log(`${i}. Mediamatiker-Klasse ${klassen[i]}`);
+    i++;
 }
 
 
@@ -20,7 +26,7 @@ console.log("\nAusgabe mit Parallel-Klassen (Ausgabe mit for)");
 let klasse;
 let bezeichnung;
 i = 0;
-while (i < 4){
+while (i < klassen.length){
     //UTF-16 Hexadezimal 'a' codiert
     //https://asecuritysite.com/coding/asc2
     bezeichnung = 0x61;
