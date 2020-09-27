@@ -11,24 +11,26 @@ let greetUser = () => {
     console.log('Welcome user!')
 }
 
-//Aufruf der Arrow-Funktion mit gleichzeitger Ausgabe auf der Console
+//Aufruf der Arrow-Funktion
 greetUser();
 
 //Arrow-Funktion als Einzeihler (in Ausnahmefällen)
-let greetUserLong = () => console.log('Welcome user too!');
+let greetUserShort = () => console.log('Welcome user too!');
 
 //Aufruf der Arrow-Funktion mit gleichzeitger Ausgabe auf der Console
-greetUserLong();
+greetUserShort();
 
 /*
 Beispiel 2 - Arrow-Funktion MIT einem Parameter
  */
 
-const square = (num) => num * num;
-
-const squareLong = (num) => {
+//Arrow-Funktion als Mehrzeihler (empfohlen)
+let square = (num) => {
     return num * num;
 }
+
+//Verkürzte Variante
+let squareShort = (num) => num * num;
 
 
 

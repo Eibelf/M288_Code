@@ -7,22 +7,22 @@ Applikation wartbarer (leserlich, kosteneffizient, erweiterbar).
 Beispiel 1 - Funktion ohne Parameter
  */
 
-//entweder als 'function expression' -> Funktionsname wird weggelassen
+//'function expression' -> Funktionsname wird weggelassen
 let greetUser = function () {
     console.log('Welcome user!')
 }
 
-//Aufruf der Funktion mit gleichzeitger Ausgabe auf der Console
+//Aufruf der Funktion
 greetUser();
 greetUser();
 
 
-//oder als 'function declaration' -> Funktionsname wird hinzugefügt.
+//'function declaration' -> Funktionsname wird hinzugefügt.
 function greetUser2() {
     console.log('Welcome user too!')
 }
 
-//Aufruf der Funktion mit gleichzeitger Ausgabe auf der Console
+//Aufruf der Funktion
 greetUser2();
 
 /*
@@ -50,6 +50,11 @@ console.log(`${param1} hoch 2 gibt: ${square(param1)}`);
 Beispiel 3 - Funktion MIT mehr als einem Parameter
  */
 
+/*let add = function (a,b){
+    return a + b;
+}*/
+
+//besser : Parameter werden überprüft
 let add = function (a,b) {
     if ((a === undefined) || (b === undefined)) {
         return 'Please provide two arguments!';
@@ -59,7 +64,7 @@ let add = function (a,b) {
 }
 
 
-//undefined
+//Challenge
 console.log(`Add: ${add()}`);
 console.log(`Add: ${add(2)}`);
 console.log(`Add: ${add(2,4)}`);
