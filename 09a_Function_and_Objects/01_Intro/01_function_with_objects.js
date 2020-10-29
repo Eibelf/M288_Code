@@ -1,5 +1,5 @@
 /*
-Thema: Funktionen
+Thema: Objekte mit Function-Expression
 Funktionen (praktisch in allen Programmiersprachen) vorhanden,
 erlauben Programmcode mehrmals auszuführen gestalten die gesamte
 Applikation wartbarer (leserlich, kosteneffizient, erweiterbar).

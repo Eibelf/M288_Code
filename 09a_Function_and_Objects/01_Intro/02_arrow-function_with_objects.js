@@ -1,14 +1,12 @@
 /*
-Thema: Arrow function
-Das ist nicht anderes als eine andere, kompaktere
+Thema: Objekte mit Arrow Funktionen
+Das ist nicht anderes als eine andere, kompakte
 Schreibweise für Funktionen in JavaScript (und auch in anderen Programmiersprachen).
 */
 
 /*
 Beispiel 1 - Arrow-Funktion mit Objekten als Parameter
  */
-
-
 //Objekt 1
 let book1 = {
     title: '1984',
@@ -18,27 +16,29 @@ let book1 = {
 
 //Objekt 2
 let book2 = {
-    title: 'A Peoples History',
-    author: 'Howard Zinn',
-    pageCount: 723
+    title: 'Schachnovelle',
+    author: 'Stefan Zweig',
+    pageCount: 112
 }
 
-//Arrow-Funktion liefert als Resultat wieder ein Objekt zurück
+//Repetition: Einfache Ausgabe
+console.log(`${book1.author} is the author of the book "${book1.title}".`);
+
+
+//Arrow-Funktion liefert als Resultat ein neues Objekt zurück
 let getSummary = (book) => {
     return {
-        summary: `Das Buch \"${book.title}\" ist vom Autor ${book.author}`,
-        pageCount: `Das Buch \"${book.title}\" hat ${book.pageCount} Seiten.`
+        summary: `Das Buch "${book.title}" ist vom Autor ${book.author}.`,
+        pageCount: `Das Buch "${book.title} hat ${book.pageCount} Seiten.`
     }
 }
 
-
-
 //Aufruf und Ausgabe
 let obj1 = getSummary(book1);
-console.log(`${obj1.summary}. ${obj1.pageCount}`);
+console.log(`${obj1.summary}.\n${obj1.pageCount}`);
 
 obj1 = getSummary(book2);
-console.log(`${obj1.summary}. ${obj1.pageCount}`);
+console.log(`${obj1.summary}.\n${obj1.pageCount}`);
 
 
 /*
@@ -52,13 +52,12 @@ const personen = [{
     name: 'Andrew',
     age: 27
 }, {
-    name: 'Vikram',
+    name: "Fritz",
     age: 31
 }, {
-    name: 'Jess',
+    name: "Anna",
     age: 22
-}]
-
+}];
 
 let filter1 =
     personen.filter((person) =>
