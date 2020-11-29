@@ -16,7 +16,8 @@ renderTasks(tasks, filters);
 /**
  * Event when searching for tasks
  */
-document.querySelector('#search-text').addEventListener('input', (e) => {
+document.querySelector('#search-text')
+    .addEventListener('input', (e) => {
     //set search filter
     filters.searchText = e.target.value;
     //show task list with filter
@@ -27,7 +28,8 @@ document.querySelector('#search-text').addEventListener('input', (e) => {
 /**
  * Event for a new task
  */
-document.querySelector('#new-task').addEventListener('submit', (e) => {
+document.querySelector('#new-task')
+    .addEventListener('submit', (e) => {
     e.preventDefault()
 
     //add new task with push-method into JSON-object
@@ -44,7 +46,11 @@ document.querySelector('#new-task').addEventListener('submit', (e) => {
     e.target.elements.text.value = '';
 })
 
-document.querySelector('#hide-completed').addEventListener('change', (e) => {
+/**
+ * Hide completed tasks
+ */
+document.querySelector('#hide-completed')
+    .addEventListener('change', (e) => {
     //en- or disable completed tasks
     filters.hideCompleted = e.target.checked;
     //show tasks

@@ -15,7 +15,9 @@
   "author": "daniel.garavaldi@bzz.ch",
   "license": "ISC",
   "dependencies": {
+    "esm": "^3.2.25",
+    "express-useragent": "^1.0.15",
     "moment": "^2.27.0",
-    "esm": "^3.2.25"
+    "request-ip": "^2.1.3"
   }
 }

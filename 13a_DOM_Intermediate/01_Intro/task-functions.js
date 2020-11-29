@@ -32,7 +32,7 @@ const removeTask = (id) => {
     const taskIndex = tasks
         .findIndex((task) => task.id === id);
 
-    //decrement task index
+    //remove task
     if (taskIndex > -1) {
         tasks.splice(taskIndex, 1);
     }
@@ -74,19 +74,19 @@ const renderTasks = (tasks, filters) => {
 
 // Get the DOM elements for an individual note
 const generateTaskDOM = (task) => {
-    const taskEl = document.createElement('div')
-    const checkbox = document.createElement('input')
-    const taskText = document.createElement('span')
-    const removeButton = document.createElement('button')
+    const taskEl = document.createElement('div');
+    const checkbox = document.createElement('input');
+    const taskText = document.createElement('span');
+    const removeButton = document.createElement('button');
 
     // Setup task checkbox
     checkbox.setAttribute('type', 'checkbox')
-    checkbox.checked = task.completed
-    taskEl.appendChild(checkbox)
+    checkbox.checked = task.completed;
+    taskEl.appendChild(checkbox);
     checkbox.addEventListener('change', () => {
-        toggleTask(task.id)
-        saveTasks(tasks)
-        renderTasks(tasks, filters)
+        toggleTask(task.id);
+        saveTasks(tasks);
+        renderTasks(tasks, filters);
     })
 
     // Setup the task text
