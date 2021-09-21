@@ -1,5 +1,5 @@
 {
-  "name": "JSBC_MED19",
+  "name": "m288",
   "version": "1.0.0",
   "description": "JavaScript Bootcamp",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "keywords": [
     "Mediamatiker",
-    "ICT-06",
+    "M288",
     "javascript",
     "oop"
   ],

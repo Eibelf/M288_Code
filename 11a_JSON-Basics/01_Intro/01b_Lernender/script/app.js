@@ -33,3 +33,20 @@ let faecherListe = lernender.courses.allgemein;
 for (let i=0;i<faecherListe.length; i++){
     htmlObj.innerHTML += `${faecherListe[i]}<br>`;
 };
+
+/*let portfolio ={
+    fach: "MMT",
+    titel: "Filmschnitt",
+    dauer: 10,
+    inhalt: "Arbeitsplatz eines Mediamatikers - Showcase",
+    autor: ["Augstburger", "Marty"],
+    getAutoren(){
+        return `${this.autor[0]}, ${this.autor[1]}`
+    }
+}
+
+htmlObj = document.getElementById("portfolio");
+htmlObj.innerHTML =
+    `Fach: ${portfolio.fach.toString()}<br>`+
+    `Autoren: ${portfolio.getAutoren()}<br>`;*/
+

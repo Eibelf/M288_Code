@@ -95,6 +95,7 @@ const generateTaskDOM = (task) => {
 
     // Setup the remove button
     removeButton.textContent = 'x';
+    //removeButton.innerHTML = '<img src=\"img/binicon.jpg\">';
     taskEl.appendChild(removeButton);
     removeButton.addEventListener('click', () => {
         removeTask(task.id);
