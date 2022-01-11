@@ -43,4 +43,3 @@ personArray.push(new Person("Greta", "Thunberg", "weiblich", "2003-03-01"));
 //console.log(personArray.filter((person) => person.gender === 'weiblich'));
 //Filtern der Objekt-Liste nach Nachnamen
 console.log(personArray.filter((person) => person.lastName === 'Muster'));
-
