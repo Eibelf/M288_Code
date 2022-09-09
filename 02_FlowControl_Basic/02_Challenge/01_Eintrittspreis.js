@@ -10,3 +10,12 @@ Ermitteln Sie anhand von if-then-else folgende Eintrittsbedingungen:
 
 //Beispiel-Input
 let age = 35;
+if (age=='6'){
+    alert('Kostenlos')
+} else if (age>=='16'){
+    alert ('Kinderrabatt')
+}else if(age<=='65'){
+    alert('Seniorenrabatt')
+}else{
+    alert ("Gib mal was ein")
+}
