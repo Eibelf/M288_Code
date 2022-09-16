@@ -29,6 +29,8 @@ let numberArray = [ 0,1,2,3,4 ];
 console.log(numberArray);
 //Challenge: geben Sie das erste und das letzte Array-Element aus
 
+console.log(numberArray[0,4]);
+
 //Boolean-Array
 let boolArray = [ true,false ];
 
