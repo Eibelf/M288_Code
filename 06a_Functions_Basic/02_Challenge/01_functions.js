@@ -9,7 +9,10 @@ b) Testen Sie Ihre Funktion mind. zwei Mal mit verschiedenen Fahrenheit-Werten.
 
  */
 
-//Ab hier Ihr Programm einfügen
+//Ab hier Ihr Programm einfügen 
+let convertFahrenheitToCelsius = function(){
+    console.log((68 - 32) * 5 / 9)
+}
 
 //Ende Ihres Programms
 
